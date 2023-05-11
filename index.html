@@ -17,22 +17,29 @@
 		window.onload = function () {
 		
 			BindEruda();
-		
+			$('#btn1').click(function () {
 			 var iframe1 = document.getElementById('iframe1');
 				if (iframe1 != null) {
 					iframe1.contentWindow.postMessage({
 					   action: 'sendData', 
 					   fidoAuthorizationCode: ' ASSET_SECURITIES ',
-					   data: 'KM3oURiDT9fs8TU7gGJPA2uFvVWk1dgeg3Nv/ZcRmz1jVpwhwlqfI7hdgKCwwlMiwiWYJr2rEZ7S0WVLr8xgtv6oMfuGyEijXWN5drktV+hmh7txnr2lLl7nvtCdBzz7m9RIDTwMLtN/q/z0cwh8t5tqv61BlPXpr4Tq4MTrk1ghVRDdKDo+z05f25fJGizmuNedfZMUqWri8iSgY96Gf5Ox+eJpjcCsN9QEDgvX9VRdNRMapv/BCH4l8/Fh7yRkHL3g8K7Ok9WXZTW4LwuAl/fRy5qjNI9uAcgof7RZ61eKruRpDP23o58GRTg3oSIg', 
+					   data: 'KM3oURiDT9fs8TU7gGJPA2uFvVWk1dgeg3Nv/ZcRmz1jVpwhwlqfI7hdgKCwwlMiwiWYJr2rEZ7S0WVLr8xgttlL5NAGBqYhBnsmuLiXB9ohI8JXtG4cgYCfrR9ZFOCFGUCXJvCW3MLRrKCdaLiEEJ3DPWtISpMvclyWuBSxOygcwYGf83R3G1B7+OHyM3pGbCnEx5d6OVbqO7NHNW7S8Awz8Wu6XnWsf1kKjP2oQlGj4XhvTZ3j5Ulsob6CeUu9UYal/teI4sGUS/KbvB6gFqHzI+fMcsJc8RPV4v/8/8wHuce0ui5KSnnUM7zyH/DK', 
 					   appClientId: 'SECURITIES_APP'
 					}, '*');
 
 					
 				}
+                return false;
+            });
+			
+
 		}
+		
 	</script>
 </head>
 <body>
+	<input type="button" id="btn1" value="TEST" width="100"><br><br>
 	<iframe src="https://ystest.yuanta.com.tw/MAIN/NexusWebTrade/FIDO/GoMaster" id="iframe1" scrolling="no" height="400">
+	
 </body>
 </html>
