@@ -1,0 +1,23 @@
+<html>
+<head>
+	<script src="jquery-3.5.1.min.js"></script>
+	<script type="text/javascript">
+		window.onload = function () {
+			 var iframe1 = document.getElementById('iframe1');
+				if (iframe1 != null) {
+					iframe1.contentWindow.postMessage({
+					   action: 'sendData', 
+					   fidoAuthorizationCode: ' ASSET_SECURITIES ',
+					   data: 'KM3oURiDT9fs8TU7gGJPA2uFvVWk1dgeg3Nv/ZcRmz1jVpwhwlqfI7hdgKCwwlMiwiWYJr2rEZ7S0WVLr8xgttYqW1LrTX8TBK02vM8tL9PzYhAD9dmHnntIKXpbRYlxzFGHo+gHl4G0DysRxh+YkMi7EuUTfX88/F/o92PyZYa0JHPXzGVQtOs/ZoOfle67kpieoHN7Fw+pTByEm4MeaQOpD1jQ7+MAbLuYeDt6TmM4lwNrZR05wuoc5QDxXh289wsFmnEgpmYOzh5qurtik+fy3BPjObLfzVBF4I95jHljNqDRCx+LOJ/HoKyOJprC', 
+					   appClientId: 'SECURITIES_APP'
+					}, '*');
+
+					
+				}
+		}
+	</script>
+</head>
+<body>
+	<iframe src="https://ystest.yuanta.com.tw/MAIN/NexusWebTrade/FIDO/GoMaster" id="iframe1" scrolling="no" height="400">
+</body>
+</html>
