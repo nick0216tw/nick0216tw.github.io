@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "eruda-icon";
+    src: url("./eruda-icon.woff") format('woff');
+}
+
+@font-face {
+    font-family: "luna-object-viewer-icon";
+    src: url("./luna-object-viewer-icon.woff") format('woff');
+}
+
+@font-face {
+    font-family: "luna-console-icon";
+    src: url("./luna-object-viewer-icon.woff") format('woff');
+}
