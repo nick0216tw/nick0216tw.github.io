@@ -1,0 +1,30 @@
+<html>
+<head>
+	<script src="jquery-3.5.1.min.js"></script>
+	<script src="eruda/eruda.min.js" asp-append-version="true"></script>
+	<script type="text/javascript">
+
+		eruda?.init()
+
+		/**
+		 * 開啟手機開發者工具 Eruda
+		 * */
+		function BindEruda() {
+			const $eruda = $(eruda._$el[0])
+			$eruda?.show();
+		}
+	
+		window.onload = function () {
+		
+			BindEruda();
+			localStorage.setItem('testlocalStorage', 'test');
+			location.href='https://ystest.yuanta.com.tw/new/DEV/test/ls2.html'
+
+		}
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>
