@@ -36,7 +36,28 @@
             });
 			
 			$('#btn2').click(function () {
-				history.back();
+				// 取得 iframe 的引用
+				var iframe = document.getElementById('iframe1');
+
+				// 要傳遞的訊息
+				var message = {
+				 action: 'goBack'
+				 fidoAuthorizationCode: ' ASSET_LIFE_INSURANCE ',
+				};
+
+				// 發送訊息給 iframe
+				iframe.contentWindow.postMessage(message, '*');
+				
+				// 監聽 iframe 的回應訊息
+				window.addEventListener('message', function(event) {
+				 if (event.origin === 'https://yestest.yuanta.com.tw' && event.source === iframe.contentWindow) {
+				   // 取得回應訊息
+				   var response = event.data;
+				   // 在這裡處理回應
+				 }
+				});
+
+
                 return false;
             });
 			
