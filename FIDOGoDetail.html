@@ -26,7 +26,7 @@
 					iframe1.contentWindow.postMessage({
 					   action: 'sendData', 
 					   fidoAuthorizationCode: ' ASSET_SECURITIES ',
-					   data: $('#btn2').val(), 
+					   data: $('#dataval').val(), 
 					   appClientId: 'SECURITIES_APP'
 					}, '*');
 
@@ -46,7 +46,7 @@
 	</script>
 </head>
 <body>
-	data:<input type="text" id="btn2" value="" width="200"><br><br>
+	data:<input type="text" id="dataval" value="" width="200"><br><br>
 	<input type="button" id="btn1" value="TEST" width="100">&nbsp;&nbsp;<input type="button" id="btn2" value="back" width="100"><br><br>
 	<iframe src="https://ystest.yuanta.com.tw/MAIN/NexusWebTrade/FIDO/GoDetail" id="iframe1" scrolling="yes" height="80%" width="100%">
 	
