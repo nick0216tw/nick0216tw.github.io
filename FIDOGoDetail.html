@@ -20,7 +20,7 @@
 			BindEruda();
 			
 			$('#btn1').click(function () {
-			//alert($('#btn2').val());
+			
 			 var iframe1 = document.getElementById('iframe1');
 				if (iframe1 != null) {
 					iframe1.contentWindow.postMessage({
@@ -35,6 +35,11 @@
                 return false;
             });
 			
+			$('#btn2').click(function () {
+				history.back();
+                return false;
+            });
+			
 
 		}
 		
@@ -42,7 +47,7 @@
 </head>
 <body>
 	data:<input type="text" id="btn2" value="" width="200"><br><br>
-	<input type="button" id="btn1" value="TEST" width="100"><br><br>
+	<input type="button" id="btn1" value="TEST" width="100">&nbsp;&nbsp;<input type="button" id="btn2" value="back" width="100"><br><br>
 	<iframe src="https://ystest.yuanta.com.tw/MAIN/NexusWebTrade/FIDO/GoDetail" id="iframe1" scrolling="yes" height="80%" width="100%">
 	
 </body>
